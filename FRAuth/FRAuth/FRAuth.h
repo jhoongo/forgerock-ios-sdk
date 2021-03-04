@@ -15,7 +15,3 @@ FOUNDATION_EXPORT double FRAuthVersionNumber;
 
 //! Project version string for FRAuth.
 FOUNDATION_EXPORT const unsigned char FRAuthVersionString[];
-
-#import "JBUtil.h"
-// In this header, you should import all the public headers of your framework using statements like #import <FRAuth/PublicHeader.h>
-

@@ -9,6 +9,7 @@
 //
 
 import FRAuth
+import Foundation
 
 @objc
 class CustomCallback: Callback {

@@ -67,10 +67,10 @@ public class FRJailbreakDetector: NSObject {
     /// - Returns: returns result of analysis of all given detectors
     @objc
     public func analyze() -> Double {
-        #if targetEnvironment(simulator)
-            FRLog.i("Currently running on Simulator; aborting JailbreakDetector")
-            return 0.0
-        #else
+//        #if targetEnvironment(simulator)
+//            FRLog.i("Currently running on Simulator; aborting JailbreakDetector")
+//            return 0.0
+//        #else
         if self.detectors.count > 0 {
             let _ = self.detectors.count
             var maxResult = 0.0
@@ -94,6 +94,6 @@ public class FRJailbreakDetector: NSObject {
             FRLog.w("No JailbreakDetector is found")
             return -1.0
         }
-        #endif
+//        #endif
     }
 }
