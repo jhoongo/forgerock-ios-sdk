@@ -8,12 +8,11 @@
 //  of the MIT license. See the LICENSE file for details.
 //
 
-#include "JBUtil.h"
-
 #import <sys/stat.h>
 #import <mach-o/dyld.h>
 #include <string.h>
 #include <unistd.h>
+#include "JBUtil.h"
 
 
 bool validate_sandbox() {

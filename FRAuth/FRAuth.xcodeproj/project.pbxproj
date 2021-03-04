@@ -11,9 +11,9 @@
 		D5054B4E244680C3007FBA92 /* DeviceProfileCallbackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5054B4D244680C3007FBA92 /* DeviceProfileCallbackTests.swift */; };
 		D5094CDA23DF7F850041D5C1 /* CookieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5094CD923DF7F850041D5C1 /* CookieTests.swift */; };
 		D50F449925F0AC08003ACFF4 /* JBUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = D50F449725F0AC08003ACFF4 /* JBUtil.c */; };
-		D50F449A25F0AC08003ACFF4 /* JBUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = D50F449825F0AC08003ACFF4 /* JBUtil.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		D50F454925F0B66A003ACFF4 /* JBUtil.h in Sources */ = {isa = PBXBuildFile; fileRef = D50F449825F0AC08003ACFF4 /* JBUtil.h */; };
 		D50F454A25F0B66A003ACFF4 /* JBUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = D50F449725F0AC08003ACFF4 /* JBUtil.c */; };
+		D50F459425F0BFB3003ACFF4 /* JBUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = D50F459325F0BFB3003ACFF4 /* JBUtil.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D50F45AF25F0C080003ACFF4 /* JBUtil.h in Sources */ = {isa = PBXBuildFile; fileRef = D50F459325F0BFB3003ACFF4 /* JBUtil.h */; };
 		D512CD41240DC41E00AF520E /* FRRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D512CD40240DC41E00AF520E /* FRRestClient.swift */; };
 		D513F17524DA6B490042228B /* AuthApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D513F17424DA6B490042228B /* AuthApiError.swift */; };
 		D513F17724DA87B10042228B /* SuspendedTextOutputCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F3E10224D20FBF00536EA0 /* SuspendedTextOutputCallback.swift */; };
@@ -376,8 +376,8 @@
 		D5054B4D244680C3007FBA92 /* DeviceProfileCallbackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceProfileCallbackTests.swift; sourceTree = "<group>"; };
 		D5094CD923DF7F850041D5C1 /* CookieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieTests.swift; sourceTree = "<group>"; };
 		D50F449725F0AC08003ACFF4 /* JBUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = JBUtil.c; sourceTree = "<group>"; };
-		D50F449825F0AC08003ACFF4 /* JBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBUtil.h; sourceTree = "<group>"; };
 		D50F458825F0BDD0003ACFF4 /* FRAuth.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = FRAuth.modulemap; sourceTree = "<group>"; };
+		D50F459325F0BFB3003ACFF4 /* JBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBUtil.h; sourceTree = "<group>"; };
 		D512CD40240DC41E00AF520E /* FRRestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRRestClient.swift; sourceTree = "<group>"; };
 		D513F17424DA6B490042228B /* AuthApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiError.swift; sourceTree = "<group>"; };
 		D513F17924DA91630042228B /* AuthApiErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiErrorTests.swift; sourceTree = "<group>"; };
@@ -647,10 +647,18 @@
 		D50F449425F0ABEF003ACFF4 /* SharedC */ = {
 			isa = PBXGroup;
 			children = (
-				D50F449825F0AC08003ACFF4 /* JBUtil.h */,
+				D50F459225F0BFB3003ACFF4 /* include */,
 				D50F449725F0AC08003ACFF4 /* JBUtil.c */,
 			);
 			path = SharedC;
+			sourceTree = "<group>";
+		};
+		D50F459225F0BFB3003ACFF4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D50F459325F0BFB3003ACFF4 /* JBUtil.h */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 		D51672A42321AB0B007053EE /* Network */ = {
@@ -1531,7 +1539,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D50F449A25F0AC08003ACFF4 /* JBUtil.h in Headers */,
+				D50F459425F0BFB3003ACFF4 /* JBUtil.h in Headers */,
 				D554630922A6DF720096C7A4 /* FRAuth.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1819,7 +1827,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D50F454925F0B66A003ACFF4 /* JBUtil.h in Sources */,
+				D50F45AF25F0C080003ACFF4 /* JBUtil.h in Sources */,
 				D50F454A25F0B66A003ACFF4 /* JBUtil.c in Sources */,
 				D5C8641E252EE87800268F06 /* OAuth2Error.swift in Sources */,
 				D5CD493A25266A5E006DD932 /* BrowserError.swift in Sources */,

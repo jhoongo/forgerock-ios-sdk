@@ -14,4 +14,4 @@
 
 #endif /* FRObjcTestBridgingHeader_h */
 
-#import <FRAuth/JBUtil.h>
+#import "JBUtil.h"
