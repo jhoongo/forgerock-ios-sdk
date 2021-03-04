@@ -10,7 +10,7 @@
 
 import Foundation
 #if SWIFT_PACKAGE
-import JBUtil
+import FRAuthC
 #endif
 
 /// SandboxDetector is a JailbreakDetector class, and is used as one of default JailbreakDetector's detectors to determine whether the device is Jailbroken or not
