@@ -377,7 +377,7 @@
 		D5094CD923DF7F850041D5C1 /* CookieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieTests.swift; sourceTree = "<group>"; };
 		D50F449725F0AC08003ACFF4 /* JBUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = JBUtil.c; sourceTree = "<group>"; };
 		D50F449825F0AC08003ACFF4 /* JBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBUtil.h; sourceTree = "<group>"; };
-		D50F451F25F0B37F003ACFF4 /* FRAuth.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = FRAuth.modulemap; sourceTree = "<group>"; };
+		D50F458825F0BDD0003ACFF4 /* FRAuth.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = FRAuth.modulemap; sourceTree = "<group>"; };
 		D512CD40240DC41E00AF520E /* FRRestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRRestClient.swift; sourceTree = "<group>"; };
 		D513F17424DA6B490042228B /* AuthApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiError.swift; sourceTree = "<group>"; };
 		D513F17924DA91630042228B /* AuthApiErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiErrorTests.swift; sourceTree = "<group>"; };
@@ -647,7 +647,6 @@
 		D50F449425F0ABEF003ACFF4 /* SharedC */ = {
 			isa = PBXGroup;
 			children = (
-				D50F451F25F0B37F003ACFF4 /* FRAuth.modulemap */,
 				D50F449825F0AC08003ACFF4 /* JBUtil.h */,
 				D50F449725F0AC08003ACFF4 /* JBUtil.c */,
 			);
@@ -970,6 +969,7 @@
 		D55462FA22A6DF720096C7A4 /* FRAuth */ = {
 			isa = PBXGroup;
 			children = (
+				D50F458825F0BDD0003ACFF4 /* FRAuth.modulemap */,
 				D50F449425F0ABEF003ACFF4 /* SharedC */,
 				D5723C3823F4C65800557AA8 /* Authentication */,
 				D5723C3B23F4C65800557AA8 /* Authorization */,
@@ -2159,7 +2159,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.2.0;
-				MODULEMAP_FILE = "${PROJECT_DIR}/FRAuth/SharedC/FRAuth.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/FRAuth/FRAuth.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
 				PRODUCT_BUNDLE_IDENTIFIER = com.forgerock.ios.FRAuth;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -2193,7 +2193,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.2.0;
-				MODULEMAP_FILE = "${PROJECT_DIR}/FRAuth/SharedC/FRAuth.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/FRAuth/FRAuth.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
 				PRODUCT_BUNDLE_IDENTIFIER = com.forgerock.ios.FRAuth;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
