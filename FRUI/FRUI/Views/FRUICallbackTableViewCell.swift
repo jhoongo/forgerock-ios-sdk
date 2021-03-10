@@ -8,7 +8,7 @@
 //  of the MIT license. See the LICENSE file for details.
 //
 
-
+import UIKit
 import Foundation
 import FRAuth
 
