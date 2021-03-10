@@ -65,7 +65,7 @@
 		D5A9EC3524638833002009E2 /* AuthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A9EC3424638833002009E2 /* AuthType.swift */; };
 		D5B55C19243285FC00B49320 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B55C18243285FC00B49320 /* Crypto.swift */; };
 		D5B55C1B2432870600B49320 /* OathError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B55C1A2432870600B49320 /* OathError.swift */; };
-		D5B55C1F24329ABA00B49320 /* Base32Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B55C1E24329ABA00B49320 /* Base32Utils.swift */; };
+		D5B55C1F24329ABA00B49320 /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B55C1E24329ABA00B49320 /* Base32.swift */; };
 		D5C334332560EE8B00CC6C19 /* 01-cert.cert in Resources */ = {isa = PBXBuildFile; fileRef = D5C333F32560EE8B00CC6C19 /* 01-cert.cert */; };
 		D5C334342560EE8B00CC6C19 /* 01-pkey.key in Resources */ = {isa = PBXBuildFile; fileRef = D5C333F42560EE8B00CC6C19 /* 01-pkey.key */; };
 		D5C334352560EE8B00CC6C19 /* 02-pkey.pem in Resources */ = {isa = PBXBuildFile; fileRef = D5C333F52560EE8B00CC6C19 /* 02-pkey.pem */; };
@@ -210,7 +210,7 @@
 		D5A9EC3424638833002009E2 /* AuthType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthType.swift; sourceTree = "<group>"; };
 		D5B55C18243285FC00B49320 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		D5B55C1A2432870600B49320 /* OathError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OathError.swift; sourceTree = "<group>"; };
-		D5B55C1E24329ABA00B49320 /* Base32Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base32Utils.swift; sourceTree = "<group>"; };
+		D5B55C1E24329ABA00B49320 /* Base32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base32.swift; sourceTree = "<group>"; };
 		D5B55C2124329EAB00B49320 /* Base32Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base32Tests.swift; sourceTree = "<group>"; };
 		D5B55C232432B52800B49320 /* OathAlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OathAlgorithmTests.swift; sourceTree = "<group>"; };
 		D5B68CEB248CDDB200CD2F5B /* FRTestHost.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FRTestHost.xcodeproj; path = ../FRTestHost/FRTestHost.xcodeproj; sourceTree = "<group>"; };
@@ -779,7 +779,7 @@
 		D5EBEC41243166A8007F474C /* Base32 */ = {
 			isa = PBXGroup;
 			children = (
-				D5B55C1E24329ABA00B49320 /* Base32Utils.swift */,
+				D5B55C1E24329ABA00B49320 /* Base32.swift */,
 			);
 			path = Base32;
 			sourceTree = "<group>";
@@ -989,7 +989,7 @@
 				D5D9147E242E900900E24ECA /* OathAlgorithm.swift in Sources */,
 				D5E3089F2473942300724502 /* OathTokenCode.swift in Sources */,
 				D5C9A1B024636A73004D5941 /* AuthenticatorManager.swift in Sources */,
-				D5B55C1F24329ABA00B49320 /* Base32Utils.swift in Sources */,
+				D5B55C1F24329ABA00B49320 /* Base32.swift in Sources */,
 				D5D9147A242E844600E24ECA /* OathCodeGenerator.swift in Sources */,
 				D52D5C52241318F000835035 /* PushQRCodeParser.swift in Sources */,
 				D5FFA05A245FB319003680C1 /* CodableValue.swift in Sources */,
