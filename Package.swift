@@ -20,19 +20,6 @@ let package = Package (
         .target(name: "FRAuth", dependencies: [.target(name: "FRCore"), .target(name: "cFRAuth")], path: "FRAuth/FRAuth", exclude: ["Info.plist", "FRAuth.h", "SharedC/Sources/include/JBUtil.h", "SharedC/Sources/JBUtil.c", "SharedC/FRAuth.modulemap"]),
         .target(name: "FRProximity", dependencies: [.target(name: "FRAuth")], path: "FRProximity/FRProximity", exclude: ["Info.plist", "FRProximity.h"]),
         .target(name: "FRAuthenticator", dependencies: [.target(name: "FRAuth"), .target(name: "cFRAuthenticator")], path: "FRAuthenticator/FRAuthenticator", exclude: ["Info.plist", "FRAuthenticator.h", "SharedC/Sources/include/base32.h", "SharedC/Sources/base32.c", "SharedC/FRAuthenticator.modulemap"]),
-        .target(name: "FRUI", dependencies: [.target(name: "FRAuth")], path: "FRUI/FRUI", exclude: ["Info.plist", "FRUI.h"], resources: [
-            .process("Assets/Assets.xcassets"),
-            .process("ViewControllers/AuthStepViewController.xib"),
-            .process("Views/BooleanAttributeInputCallbackTableViewCell.xib"),
-            .process("Views/ChoiceCallbackTableViewCell.xib"),
-            .process("Views/ConfirmationCallbackTableViewCell.xib"),
-            .process("Views/DeviceAttributeTableViewCell.xib"),
-            .process("Views/KbaCreateCallbackTableViewCell.xib"),
-            .process("Views/NameCallbackTableViewCell.xib"),
-            .process("Views/PasswordCallbackTableViewCell.xib"),
-            .process("Views/PollingWaitCallbackTableViewCell.xib"),
-            .process("Views/TermsAndConditionsTableViewCell.xib"),
-            .process("Views/TextOutputCallbackTableViewCell.xib"),
-        ])
+        .target(name: "FRUI", dependencies: [.target(name: "FRAuth")], path: "FRUI/FRUI", exclude: ["Info.plist", "FRUI.h"])
     ]
 )
