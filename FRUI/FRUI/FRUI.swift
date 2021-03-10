@@ -39,8 +39,12 @@ public final class FRUI {
         self.secondaryColor = UIColor.hexStringToUIColor(hex: "#fef151")
         self.errorColor = UIColor.hexStringToUIColor(hex: "#f94c23")
         self.warningColor = UIColor.hexStringToUIColor(hex: "#fef151")
-    
+        
+        #if SWIFT_PACKAGE
+        self.logoImage = UIImage(named: "forgerock-logo", in: Bundle.module, compatibleWith: nil)
+        #else
         self.logoImage = UIImage(named: "forgerock-logo", in: Bundle(for: FRUI.self), compatibleWith: nil)
+        #endif
     }
 }
 
