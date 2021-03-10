@@ -21,8 +21,6 @@ let package = Package (
         .target(name: "FRProximity", dependencies: [.target(name: "FRAuth")], path: "FRProximity/FRProximity", exclude: ["Info.plist", "FRProximity.h"]),
         .target(name: "FRAuthenticator", dependencies: [.target(name: "FRAuth"), .target(name: "cFRAuthenticator")], path: "FRAuthenticator/FRAuthenticator", exclude: ["Info.plist", "FRAuthenticator.h", "SharedC/Sources/include/base32.h", "SharedC/Sources/base32.c", "SharedC/FRAuthenticator.modulemap"]),
         .target(name: "FRUI", dependencies: [.target(name: "FRAuth")], path: "FRUI/FRUI", exclude: ["Info.plist", "FRUI.h"], resources: [
-            .process("Assets/arrow.png"),
-            .process("Assets/forgerock-logo.png"),
             .process("Assets/Assets.xcassets"),
             .process("ViewControllers/AuthStepViewController.xib"),
             .process("Views/BooleanAttributeInputCallbackTableViewCell.xib"),
